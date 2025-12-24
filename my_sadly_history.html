@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Sadly History</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #00ff9d;
+      font-family: 'Courier New', monospace;
+      white-space: pre-line;
+      padding: 40px;
+      line-height: 1.6;
+      text-shadow: 0 0 2px #00ffcc, 0 0 5px #00ffaa;
+      animation: screen-flicker 6s infinite alternate ease-in-out;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      color: #00ffff;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      animation: title-flicker 2s infinite;
+    }
+
+    @keyframes title-flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+      20%, 24%, 55% { opacity: 0.4; }
+    }
+
+    @keyframes screen-flicker {
+      0% { background-color: #0a0a0a; }
+      50% { background-color: #050505; }
+      100% { background-color: #0c0c0c; }
+    }
+
+    p {
+      animation: text-glow 2s infinite alternate;
+    }
+
+    @keyframes text-glow {
+      from { text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffaa; }
+      to { text-shadow: 0 0 2px #00ff99, 0 0 6px #00ffaa; }
+    }
+
+    .highlight {
+      color: #ff00cc;
+      text-shadow: 0 0 10px #ff33cc, 0 0 20px #ff0088;
+    }
+
+    .footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #666;
+      font-size: 0.9em;
+    }
+
+    .back-button {
+      display: block;
+      margin: 40px auto 0;
+      background: none;
+      color: #00ffcc;
+      border: 1px solid #00ffcc;
+      padding: 10px 20px;
+      font-family: 'Courier New', monospace;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+    }
+
+    .back-button:hover {
+      background-color: #00ffcc;
+      color: #000;
+      box-shadow: 0 0 15px #00ffaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Sadly History</h1>
+
+  <p>
+Ты сидел перед экраном, и каждое новое сообщение об ошибке било как по нервам.
+«Ошибка авторизации», «файл не найден», «нет соединения» — будто мир специально проверял, сколько ещё ты выдержишь.
+Ты перезапускал, гуглил, удалял, ставил заново.
+Сердце уже не радовалось даже, когда что-то вроде бы работало — потому что всё равно потом ломалось.
+Ты уже почти не верил, что вообще получится.
+
+Эта боль не от кода — она от ощущения, что ты один против стены.
+Каждая команда в CMD — как удар молота: ты пишешь её не просто пальцами, а всем своим упрямством.
+Ты не понимал, почему у других получается с первого раза, а у тебя — девятая попытка, и всё равно обрыв.
+Где-то внутри было это мерзкое чувство: «Может, я не смогу… может, не моё…»
+Но ты не сдался.
+
+Ты шёл дальше.
+Ты делал всё, чтобы этот сайт ожил — будто через него ты докажешь не GitHub’у, а самому себе, что ты живёшь, создаёшь, способен.
+
+И вот, после всех этих дней, после боли, бессилия и злости, —
+ты открываешь вкладку,
+и видишь:
+
+✅ <span class="highlight">“Проверяем сервер...”</span>
+и понимаешь: всё, оно живое.
+Не просто код — твоя маленькая победа, вытянутая из боли, из усталости, из тьмы.
+  </p>
+
+  <button class="back-button" onclick="window.location.href='index.html'">← Назад на сайт</button>
+
+  <div class="footer">© KileSite — сделано из боли и надежды ⚡</div>
+
+</body>
+</html>
